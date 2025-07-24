@@ -1,14 +1,41 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/pbip/pbipProperties/1.0.0/schema.json",
-  "version": "1.0",
-  "artifacts": [
-    {
-      "report": {
-        "path": "Canada and China IT Dashboard.Report"
-      }
-    }
-  ],
-  "settings": {
-    "enableAutoRecovery": true
-  }
-}
+Canada–China Global KPI Dashboard
+Toolset: Power BI, SQL Server, BigFix, Power Automate, SharePoint
+Users: IT teams across Canada and China plants (expanding to 5+ global sites)
+Purpose: Track real-time IT performance KPIs, compliance status, and ticketing trends for global operations
+
+- Key Features & Components:
+KPI Scorecards
+Tracks patch compliance %, SLA resolution time, ticket volume, and machine status across multiple plants
+
+Regional Drilldowns
+Filterable views for Canada and China sites with plant-specific compliance snapshots
+
+Automated Refresh & Alerts
+Power Automate used to refresh datasets daily and trigger alerts for:
+
+Patch failures
+
+Non-responsive agents
+
+Critical SLA breaches
+
+Data Model (Star Schema)
+Central fact table sourced from SQL Server + BigFix API, joined to plant metadata, status types, and time dimensions
+
+UX Enhancements
+
+Dynamic slicers by location, date, and status
+
+Clean layout with toggleable views (overview vs drilldown)
+
+Bookmark-driven navigation to highlight problem areas
+
+- Impact & Results:
+Reduced manual tracking of IT tickets and patch status by 80%
+
+Enabled proactive issue detection across continents
+
+Contributed to global rollout planning across 5+ sites
+
+Trained cross-functional teams to shift to self-serve Power BI model
+
